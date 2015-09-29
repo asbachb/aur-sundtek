@@ -34,6 +34,7 @@ package() {
   cd "$srcdir"
 
   mkdir -p "$pkgdir/opt/lib"
+  chmod +r opt/bin/mediasrv
   cp -pr opt/bin "$pkgdir/opt/"
   cp -pr opt/lib/*.so "$pkgdir/opt/lib/"
   
